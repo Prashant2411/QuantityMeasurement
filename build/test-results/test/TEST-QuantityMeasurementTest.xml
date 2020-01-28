@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="QuantityMeasurementTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2020-01-28T10:34:07" hostname="admin1-HP-EliteBook-Folio-9480m" time="0.014">
+<testsuite name="QuantityMeasurementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-28T11:03:35" hostname="admin1-HP-EliteBook-Folio-9480m" time="0.002">
   <properties/>
-  <testcase name="given1InchAnd1Feet_shouldReturnFalse" classname="QuantityMeasurementTest" time="0.002"/>
-  <testcase name="givenSameReferenceOfInch_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenFeetAndInch_shouldReturnEqual" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1YardAnd3Feet_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.001"/>
-  <testcase name="given36InchAnd1Yard_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenSameClassOfFeet_shouldReturnEqual" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1FeetAnd1Yard_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given3FeetAnd1Yard_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.001"/>
-  <testcase name="given1YardAnd36Inch_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenInchAndInch_shouldReturnEqual" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenFeetAndFeet_shouldReturnEqual" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given12InchAnd1Feet_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenSameReferenceOfFeet_shouldReturnEqual" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenSameClassOfInch_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1FeetAnd1Inch_shouldReturnFalse" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1FeetAnd12Inch_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.001"/>
-  <testcase name="given1InchAnd1Yard_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.001"/>
+  <testcase name="given2InchAnd5CM_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

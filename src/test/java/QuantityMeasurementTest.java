@@ -115,4 +115,11 @@ public class QuantityMeasurementTest {
         LengthComparison second = new LengthComparison(3.0, QuantityMeasurement.MeasurementUnit.FEET);
         Assert.assertTrue(first.equals(second));
     }
+
+    @Test
+    public void given2InchAnd5CM_shouldReturnTrue() {
+        LengthComparison first = new LengthComparison(2.0, QuantityMeasurement.MeasurementUnit.INCH);
+        LengthComparison second = new LengthComparison(5.0, QuantityMeasurement.MeasurementUnit.CENTIMETER);
+        Assert.assertTrue(first.equals(second));
+    }
 }
