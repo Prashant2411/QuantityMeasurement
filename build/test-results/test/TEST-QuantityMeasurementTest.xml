@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="QuantityMeasurementTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-01-28T06:48:42" hostname="admin1-HP-EliteBook-Folio-9480m" time="0.005">
+<testsuite name="QuantityMeasurementTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-01-28T07:05:08" hostname="admin1-HP-EliteBook-Folio-9480m" time="0.005">
   <properties/>
   <testcase name="givenSameReferenceOfInch_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.002"/>
   <testcase name="givenSameClassOfFeet_shouldReturnEqual" classname="QuantityMeasurementTest" time="0.0"/>
   <testcase name="givenInchAndInch_shouldReturnEqual" classname="QuantityMeasurementTest" time="0.0"/>
   <testcase name="givenFeetAndFeet_shouldReturnEqual" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenSameReferenceOfFeet_shouldReturnEqual" classname="QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenSameReferenceOfFeet_shouldReturnEqual" classname="QuantityMeasurementTest" time="0.0"/>
   <testcase name="givenSameClassOfInch_shouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
