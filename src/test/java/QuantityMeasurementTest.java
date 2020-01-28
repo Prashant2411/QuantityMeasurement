@@ -21,4 +21,11 @@ public class QuantityMeasurementTest {
         Feet first = new Feet(0.0);
         Assert.assertTrue(first.getClass().equals(new Feet(0.0).getClass()));
     }
+
+    @Test
+    public void givenInchAndInch_shouldReturnEqual() {
+        Inch first = new Inch(0.0);
+        Inch second = new Inch(0.0);
+        Assert.assertTrue(first.equals(second));
+    }
 }
