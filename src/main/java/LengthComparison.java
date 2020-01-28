@@ -1,6 +1,4 @@
-import java.util.Objects;
-
-public class QuantityMeasurement {
+public class LengthComparison {
 
     double value;
     MeasurementUnit unit;
@@ -21,7 +19,7 @@ public class QuantityMeasurement {
         }
     }
 
-    public QuantityMeasurement(double value, MeasurementUnit unit) {
+    public LengthComparison(double value, MeasurementUnit unit) {
         this.value = unit.getConvertedValue(value);
         this.unit = MeasurementUnit.FEET;
     }
@@ -30,13 +28,8 @@ public class QuantityMeasurement {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        QuantityMeasurement that = (QuantityMeasurement) o;
+        LengthComparison that = (LengthComparison) o;
         return Double.compare(that.value, value) == 0 &&
                 (unit == that.unit || (that.value == 0 && value == 0));
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(value, unit);
     }
 }
