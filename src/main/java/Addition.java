@@ -16,6 +16,6 @@ public class Addition {
     public Addition() {}
 
     public double getAddition(Addition... first) {
-        return first[0].value + first[1].value;
+        return Arrays.stream(first).map(a -> a.value).reduce(0.0, Double::sum);
     }
 }
