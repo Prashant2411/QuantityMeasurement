@@ -20,7 +20,7 @@ public class QuantityMeasurement {
         if (o == null || getClass() != o.getClass()) return false;
         QuantityMeasurement that = (QuantityMeasurement) o;
         return Double.compare(that.value, value) == 0 &&
-                unit == that.unit;
+                (unit == that.unit || (that.value == 0 && value == 0));
     }
 
     @Override

@@ -40,4 +40,11 @@ public class QuantityMeasurementTest {
         QuantityMeasurement first = new QuantityMeasurement(0.0, QuantityMeasurement.MeasurementUnit.INCH);
         Assert.assertTrue(first.getClass().equals(new QuantityMeasurement(0.0, QuantityMeasurement.MeasurementUnit.INCH).getClass()));
     }
+
+    @Test
+    public void givenFeetAndInch_shouldReturnEqual() {
+        QuantityMeasurement first = new QuantityMeasurement(0.0, QuantityMeasurement.MeasurementUnit.FEET);
+        QuantityMeasurement second = new QuantityMeasurement(0.0, QuantityMeasurement.MeasurementUnit.INCH);
+        Assert.assertEquals(first,second);
+    }
 }
