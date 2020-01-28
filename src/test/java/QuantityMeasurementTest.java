@@ -28,4 +28,17 @@ public class QuantityMeasurementTest {
         Inch second = new Inch(0.0);
         Assert.assertTrue(first.equals(second));
     }
+
+    @Test
+    public void givenSameReferenceOfInch_shouldReturnTrue() {
+        Inch first = new Inch(0.0);
+        Assert.assertTrue(first.equals(new Inch(0.0)));
+    }
+
+    @Test
+    public void givenSameClassOfInch_shouldReturnTrue() {
+        Inch first = new Inch(0.0);
+        Assert.assertTrue(first.getClass().equals(new Inch(0.0).getClass()));
+    }
+
 }
