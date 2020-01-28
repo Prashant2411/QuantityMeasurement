@@ -47,4 +47,32 @@ public class QuantityMeasurementTest {
         QuantityMeasurement second = new QuantityMeasurement(0.0, QuantityMeasurement.MeasurementUnit.INCH);
         Assert.assertEquals(first,second);
     }
+
+    @Test
+    public void given1FeetAnd1Inch_shouldReturnFalse() {
+        QuantityMeasurement first = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.FEET);
+        QuantityMeasurement second = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.INCH);
+        Assert.assertFalse(first.equals(second));
+    }
+
+    @Test
+    public void given1InchAnd1Feet_shouldReturnFalse() {
+        QuantityMeasurement first = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.INCH);
+        QuantityMeasurement second = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.FEET);
+        Assert.assertFalse(first.equals(second));
+    }
+
+    @Test
+    public void given1FeetAnd12Inch_shouldReturnTrue() {
+        QuantityMeasurement first = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.FEET);
+        QuantityMeasurement second = new QuantityMeasurement(12.0, QuantityMeasurement.MeasurementUnit.INCH);
+        Assert.assertTrue(first.equals(second));
+    }
+
+    @Test
+    public void given12InchAnd1Feet_shouldReturnTrue() {
+        QuantityMeasurement first = new QuantityMeasurement(12.0, QuantityMeasurement.MeasurementUnit.INCH);
+        QuantityMeasurement second = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.FEET);
+        Assert.assertTrue(first.equals(second));
+    }
 }

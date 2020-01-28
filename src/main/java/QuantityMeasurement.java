@@ -6,12 +6,22 @@ public class QuantityMeasurement {
     MeasurementUnit unit;
 
     public enum MeasurementUnit{
-        FEET, INCH
+        FEET(1), INCH(12);
+
+        private final double i;
+
+        MeasurementUnit(int i) {
+            this.i = i;
+        }
+
+        public double getConvertedValue(double value) {
+            return value/i;
+        }
     }
 
     public QuantityMeasurement(double value, MeasurementUnit unit) {
-        this.value = value;
-        this.unit = unit;
+        this.value = unit.getConvertedValue(value);
+        this.unit = MeasurementUnit.FEET;
     }
 
     @Override
