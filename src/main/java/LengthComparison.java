@@ -3,9 +3,9 @@ public class LengthComparison {
     double value;
     QuantityMeasurement.MeasurementUnit unit;
 
-    public LengthComparison(double value, QuantityMeasurement.MeasurementUnit unit) {
+    public LengthComparison(QuantityMeasurement.MeasurementUnit unit, double... value) {
         this.value = unit.getConvertedValue(value);
-        this.unit = QuantityMeasurement.MeasurementUnit.FEET;
+        this.unit = QuantityMeasurement.MeasurementUnit.INCH;
     }
 
     @Override
