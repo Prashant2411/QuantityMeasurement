@@ -73,4 +73,46 @@ public class QuantityMeasurementTest {
         QuantityMeasurement second = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.FEET);
         Assert.assertTrue(first.equals(second));
     }
+
+    @Test
+    public void given3FeetAnd1Yard_shouldReturnTrue() {
+        QuantityMeasurement first = new QuantityMeasurement(3.0, QuantityMeasurement.MeasurementUnit.FEET);
+        QuantityMeasurement second = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.YARD);
+        Assert.assertTrue(first.equals(second));
+    }
+
+    @Test
+    public void given1FeetAnd1Yard_shouldReturnTrue() {
+        QuantityMeasurement first = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.FEET);
+        QuantityMeasurement second = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.YARD);
+        Assert.assertFalse(first.equals(second));
+    }
+
+    @Test
+    public void given1InchAnd1Yard_shouldReturnTrue() {
+        QuantityMeasurement first = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.INCH);
+        QuantityMeasurement second = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.YARD);
+        Assert.assertFalse(first.equals(second));
+    }
+
+    @Test
+    public void given1YardAnd36Inch_shouldReturnTrue() {
+        QuantityMeasurement first = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.YARD);
+        QuantityMeasurement second = new QuantityMeasurement(36.0, QuantityMeasurement.MeasurementUnit.INCH);
+        Assert.assertTrue(first.equals(second));
+    }
+
+    @Test
+    public void given36InchAnd1Yard_shouldReturnTrue() {
+        QuantityMeasurement first = new QuantityMeasurement(36.0, QuantityMeasurement.MeasurementUnit.INCH);
+        QuantityMeasurement second = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.YARD);
+        Assert.assertTrue(first.equals(second));
+    }
+
+    @Test
+    public void given1YardAnd3Feet_shouldReturnTrue() {
+        QuantityMeasurement first = new QuantityMeasurement(1.0, QuantityMeasurement.MeasurementUnit.YARD);
+        QuantityMeasurement second = new QuantityMeasurement(3.0, QuantityMeasurement.MeasurementUnit.FEET);
+        Assert.assertTrue(first.equals(second));
+    }
 }

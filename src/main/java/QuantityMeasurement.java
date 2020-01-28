@@ -6,16 +6,18 @@ public class QuantityMeasurement {
     MeasurementUnit unit;
 
     public enum MeasurementUnit{
-        FEET(1), INCH(12);
+        FEET(1,1), INCH(12,1), YARD(1,3);
 
         private final double i;
+        private final double j;
 
-        MeasurementUnit(int i) {
+        MeasurementUnit(double i, double j) {
             this.i = i;
+            this.j = j;
         }
 
         public double getConvertedValue(double value) {
-            return value/i;
+            return (value*j)/i;
         }
     }
 
