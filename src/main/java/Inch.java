@@ -1,8 +1,8 @@
 import java.util.Objects;
 
 public class Inch {
-    Double value;
-    public Inch(Double value) {
+    double value;
+    public Inch(double value) {
         this.value = value;
     }
 
