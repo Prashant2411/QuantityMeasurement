@@ -18,6 +18,4 @@ public class VolumeComparisonTest {
         new QuantityComparison().getValueConverted(first, second);
         Assert.assertTrue(first.equals(second));
     }
-
-
 }
