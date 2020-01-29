@@ -1,4 +1,4 @@
-public class QuantityComparisonException extends Throwable {
+public class QuantityMeasurementException extends Throwable {
 
     public enum ExceptionType {
         NULL_EXCEPTION
@@ -6,7 +6,7 @@ public class QuantityComparisonException extends Throwable {
 
     public ExceptionType type;
 
-    public QuantityComparisonException(String message, ExceptionType type) {
+    public QuantityMeasurementException(String message, ExceptionType type) {
         super(message);
         this.type = type;
     }

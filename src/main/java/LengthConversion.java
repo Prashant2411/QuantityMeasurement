@@ -1,4 +1,4 @@
-public class QuantityMeasurement {
+public class LengthConversion {
 
     public enum MeasurementUnit {
         FEET(12, 1), INCH(1, 1), YARD(36, 1), CENTIMETER(1, 2.54);
