@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LengthComparisonTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2020-01-29T06:33:20" hostname="admin1-HP-EliteBook-Folio-9480m" time="0.015">
+  <properties/>
+  <testcase name="given1InchAnd1Feet_shouldReturnFalse" classname="LengthComparisonTest" time="0.002"/>
+  <testcase name="givenSameReferenceOfInch_shouldReturnTrue" classname="LengthComparisonTest" time="0.0"/>
+  <testcase name="givenFeetAndInch_shouldReturnEqual" classname="LengthComparisonTest" time="0.0"/>
+  <testcase name="given1YardAnd3Feet_shouldReturnTrue" classname="LengthComparisonTest" time="0.0"/>
+  <testcase name="given36InchAnd1Yard_shouldReturnTrue" classname="LengthComparisonTest" time="0.001"/>
+  <testcase name="givenSameClassOfFeet_shouldReturnEqual" classname="LengthComparisonTest" time="0.0"/>
+  <testcase name="name" classname="LengthComparisonTest" time="0.0"/>
+  <testcase name="given1FeetAnd1Yard_shouldReturnTrue" classname="LengthComparisonTest" time="0.0"/>
+  <testcase name="given3FeetAnd1Yard_shouldReturnTrue" classname="LengthComparisonTest" time="0.001"/>
+  <testcase name="given1YardAnd36Inch_shouldReturnTrue" classname="LengthComparisonTest" time="0.0"/>
+  <testcase name="givenInchAndInch_shouldReturnEqual" classname="LengthComparisonTest" time="0.0"/>
+  <testcase name="givenFeetAndFeet_shouldReturnEqual" classname="LengthComparisonTest" time="0.001"/>
+  <testcase name="given12InchAnd1Feet_shouldReturnTrue" classname="LengthComparisonTest" time="0.0"/>
+  <testcase name="givenSameReferenceOfFeet_shouldReturnEqual" classname="LengthComparisonTest" time="0.001"/>
+  <testcase name="given2InchAnd5CM_shouldReturnTrue" classname="LengthComparisonTest" time="0.001"/>
+  <testcase name="givenSameClassOfInch_shouldReturnTrue" classname="LengthComparisonTest" time="0.001"/>
+  <testcase name="given1FeetAnd1Inch_shouldReturnFalse" classname="LengthComparisonTest" time="0.0"/>
+  <testcase name="given1FeetAnd12Inch_shouldReturnTrue" classname="LengthComparisonTest" time="0.0"/>
+  <testcase name="given1InchAnd1Yard_shouldReturnTrue" classname="LengthComparisonTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

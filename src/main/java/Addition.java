@@ -23,7 +23,7 @@ public class Addition {
     public double getAddition(Addition values, Addition units) {
         double sum = 0;
         for (int i =0; i<values.value.length; i++)
-            sum += units.unit[i].getConvertedValue(values.value[i]);
+            sum += units.unit[i].getConvertedToInch(values.value[i]);
         return sum;
     }
 }

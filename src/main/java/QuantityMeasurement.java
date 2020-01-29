@@ -11,8 +11,12 @@ public class QuantityMeasurement {
             this.j = j;
         }
 
-        public double getConvertedValue(double... value) {
-            return Math.round(value[0] * i / j);
+        public double getConvertedToInch(double value) {
+            return Math.round(value * i / j);
+        }
+
+        public double getUnitsSame(double value){
+            return Math.round(value * j / i);
         }
     }
 }
