@@ -132,7 +132,7 @@ public class LengthComparisonTest {
     @Test
     public void given2InchAnd5CM_shouldReturnTrue() {
         QuantityComparison first = new QuantityComparison(QuantityConversion.MeasurementUnit.INCH, 2.0);
-        QuantityComparison second = new QuantityComparison(QuantityConversion.MeasurementUnit.CENTIMETER, 5.0);
+        QuantityComparison second = new QuantityComparison(QuantityConversion.MeasurementUnit.CENTIMETER, 5.08);
         new QuantityComparison().getValueConverted(first, second);
         Assert.assertTrue(first.equals(second));
     }

@@ -32,6 +32,22 @@ public class QuantityAdditionTest {
         QuantityAddition values = new QuantityAddition(2.0,2.5);
         QuantityAddition units = new QuantityAddition(QuantityConversion.MeasurementUnit.INCH, QuantityConversion.MeasurementUnit.CENTIMETER);
         double addition = new QuantityAddition().getAddition(values, units);
-        Assert.assertEquals(3.0, addition, 0);
+        Assert.assertEquals(3.0, addition, 0.1);
+    }
+
+    @Test
+    public void given1LitreAnd1000ML_shouldReturnAddition() {
+        QuantityAddition values = new QuantityAddition(1.0,1000);
+        QuantityAddition units = new QuantityAddition(QuantityConversion.MeasurementUnit.LITRE, QuantityConversion.MeasurementUnit.MILLI_LITRE);
+        double addition = new QuantityAddition().getAddition(values, units);
+        Assert.assertEquals(2.0, addition, 0);
+    }
+
+    @Test
+    public void given1GallonAnd3point78Litre_shouldReturnAddition() {
+        QuantityAddition values = new QuantityAddition(1.0,3.78);
+        QuantityAddition units = new QuantityAddition(QuantityConversion.MeasurementUnit.GALLON, QuantityConversion.MeasurementUnit.LITRE);
+        double addition = new QuantityAddition().getAddition(values, units);
+        Assert.assertEquals(7.56, addition, 0.1);
     }
 }

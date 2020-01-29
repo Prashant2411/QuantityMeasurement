@@ -4,7 +4,7 @@ public class QuantityComparison {
     QuantityConversion.MeasurementUnit unit;
 
     public QuantityComparison(QuantityConversion.MeasurementUnit unit, double value) {
-        this.value = Math.round(value);
+        this.value = value;
         this.unit = unit;
     }
 
