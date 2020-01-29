@@ -1,7 +1,7 @@
 public class QuantityAddition {
 
     double value[];
-    LengthConversion.MeasurementUnit unit[];
+    QuantityConversion.MeasurementUnit unit[];
 //
 //    public Addition(double value, QuantityMeasurement.MeasurementUnit unit) {
 //        this.value = unit.getConvertedValue(value);
@@ -12,7 +12,7 @@ public class QuantityAddition {
         this.value = value;
     }
 
-    public QuantityAddition(LengthConversion.MeasurementUnit... unit) {
+    public QuantityAddition(QuantityConversion.MeasurementUnit... unit) {
         this.unit = unit;
     }
 
@@ -21,7 +21,7 @@ public class QuantityAddition {
     public double getAddition(QuantityAddition values, QuantityAddition units) {
         double sum = 0;
         for (int i =0; i<values.value.length; i++)
-            sum += units.unit[i].getConvertedToInch(values.value[i]);
+            sum += units.unit[i].getConverted(values.value[i]);
         return sum;
     }
 }

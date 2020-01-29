@@ -1,18 +1,20 @@
 public class QuantityComparison {
 
     double value;
-    LengthConversion.MeasurementUnit unit;
+    QuantityConversion.MeasurementUnit unit;
 
-    public QuantityComparison(LengthConversion.MeasurementUnit unit, double value) {
+    public QuantityComparison(QuantityConversion.MeasurementUnit unit, double value) {
         this.value = Math.round(value);
         this.unit = unit;
     }
 
     public QuantityComparison() {    }
 
-    public void get(QuantityComparison a, QuantityComparison b){
-        b.value = a.unit.getUnitsSame(b.unit.getConvertedToInch(b.value));
-        b.unit = a.unit;
+    public void getValueConverted(QuantityComparison a, QuantityComparison b){
+        if (a.unit.getUnitType().equals(b.unit.getUnitType())) {
+            b.value = a.unit.getUnitsSame(b.unit.getConverted(b.value));
+            b.unit = a.unit;
+        }
     }
 
     @Override
