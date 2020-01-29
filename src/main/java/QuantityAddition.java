@@ -2,11 +2,6 @@ public class QuantityAddition {
 
     double value[];
     QuantityConversion.MeasurementUnit unit[];
-//
-//    public Addition(double value, QuantityMeasurement.MeasurementUnit unit) {
-//        this.value = unit.getConvertedValue(value);
-//        this.unit = unit;
-//    }
 
     public QuantityAddition(double... value) {
         this.value = value;

@@ -174,4 +174,12 @@ public class QuantityComparisonTest {
         new QuantityComparison().getValueConverted(first, second);
         Assert.assertTrue(first.equals(second));
     }
+
+    @Test
+    public void given212FahrenheitAnd100Celsius_shouldReturnEqual() {
+        QuantityComparison first = new QuantityComparison(QuantityConversion.MeasurementUnit.FAHRENHEIT, 212.0);
+        QuantityComparison second = new QuantityComparison(QuantityConversion.MeasurementUnit.CELSIUS, 100.0);
+        new QuantityComparison().getValueConverted(first, second);
+        Assert.assertTrue(first.equals(second));
+    }
 }
