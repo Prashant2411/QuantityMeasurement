@@ -1,7 +1,9 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class LengthComparisonTest {
+public class QuantityComparisonTest {
+
+    //Length
 
     @Test
     public void givenFeetAndFeet_shouldReturnEqual() {
@@ -133,6 +135,42 @@ public class LengthComparisonTest {
     public void given2InchAnd5CM_shouldReturnTrue() {
         QuantityComparison first = new QuantityComparison(QuantityConversion.MeasurementUnit.INCH, 2.0);
         QuantityComparison second = new QuantityComparison(QuantityConversion.MeasurementUnit.CENTIMETER, 5.08);
+        new QuantityComparison().getValueConverted(first, second);
+        Assert.assertTrue(first.equals(second));
+    }
+
+    //Volume
+
+    @Test
+    public void given1LiterAnd1000MilliLiter_shouldReturnTrue() {
+        QuantityComparison first = new QuantityComparison(QuantityConversion.MeasurementUnit.LITRE, 1.0);
+        QuantityComparison second = new QuantityComparison(QuantityConversion.MeasurementUnit.MILLI_LITRE, 1000.0);
+        new QuantityComparison().getValueConverted(first, second);
+        Assert.assertTrue(first.equals(second));
+    }
+
+    @Test
+    public void given1GallonAnd3point78Liter_shouldReturnTrue() {
+        QuantityComparison first = new QuantityComparison(QuantityConversion.MeasurementUnit.GALLON, 1.0);
+        QuantityComparison second = new QuantityComparison(QuantityConversion.MeasurementUnit.LITRE, 3.78);
+        new QuantityComparison().getValueConverted(first, second);
+        Assert.assertTrue(first.equals(second));
+    }
+
+    //Weight
+
+    @Test
+    public void given1KiloGramAnd1000Gram_shouldReturnEqual() {
+        QuantityComparison first = new QuantityComparison(QuantityConversion.MeasurementUnit.KILO_GRAMS, 1.0);
+        QuantityComparison second = new QuantityComparison(QuantityConversion.MeasurementUnit.GRAMS, 1000.0);
+        new QuantityComparison().getValueConverted(first, second);
+        Assert.assertTrue(first.equals(second));
+    }
+
+    @Test
+    public void given1TonAnd1000KG_shouldReturnEqual() {
+        QuantityComparison first = new QuantityComparison(QuantityConversion.MeasurementUnit.TON, 1.0);
+        QuantityComparison second = new QuantityComparison(QuantityConversion.MeasurementUnit.KILO_GRAMS, 1000.0);
         new QuantityComparison().getValueConverted(first, second);
         Assert.assertTrue(first.equals(second));
     }
