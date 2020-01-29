@@ -50,4 +50,12 @@ public class QuantityAdditionTest {
         double addition = new QuantityAddition().getAddition(values, units);
         Assert.assertEquals(7.56, addition, 0.1);
     }
+
+    @Test
+    public void given1000TonAnd1000GM_shouldReturnAddition() {
+        QuantityAddition values = new QuantityAddition(1.0,1000.0);
+        QuantityAddition units = new QuantityAddition(QuantityConversion.MeasurementUnit.TON, QuantityConversion.MeasurementUnit.GRAMS);
+        double addition = new QuantityAddition().getAddition(values, units);
+        Assert.assertEquals(1001, addition, 0.1);
+    }
 }

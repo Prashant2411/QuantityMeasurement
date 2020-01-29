@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WeightComparisonTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-29T12:14:15" hostname="admin1-HP-EliteBook-Folio-9480m" time="0.003">
-  <properties/>
-  <testcase name="given1KiloGramAnd1000Gram_shouldReturnEqual" classname="WeightComparisonTest" time="0.002"/>
-  <testcase name="given1TonAnd1000KG_shouldReturnEqual" classname="WeightComparisonTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
