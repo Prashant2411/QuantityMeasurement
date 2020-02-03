@@ -13,7 +13,8 @@ public class QuantityComparison {
 
     public void getValueConverted(QuantityComparison a, QuantityComparison b) {
         if (a.unit.getUnitType().equals(b.unit.getUnitType())) {
-            b.value = a.unit.getUnitsSame(b.unit.getConverted(b.value));
+            b.value = a.unit.getUnitsSame(
+                    b.unit.getConverted(b.value));
             b.unit = a.unit;
         }
     }
