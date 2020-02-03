@@ -3,6 +3,8 @@ import org.junit.Test;
 
 public class QuantityAdditionTest {
 
+    //Length
+
     @Test
     public void given2InchAnd2Inch_shouldReturnAddition() {
         QuantityAddition values = new QuantityAddition(2.0,2.0);
@@ -35,6 +37,8 @@ public class QuantityAdditionTest {
         Assert.assertEquals(3.0, addition, 0.1);
     }
 
+    //Volume
+
     @Test
     public void given1LitreAnd1000ML_shouldReturnAddition() {
         QuantityAddition values = new QuantityAddition(1.0,1000);
@@ -50,6 +54,8 @@ public class QuantityAdditionTest {
         double addition = new QuantityAddition().getAddition(values, units);
         Assert.assertEquals(7.56, addition, 0.1);
     }
+
+    //Weight
 
     @Test
     public void given1000TonAnd1000GM_shouldReturnAddition() {

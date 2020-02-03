@@ -8,9 +8,10 @@ public class QuantityComparison {
         this.unit = unit;
     }
 
-    public QuantityComparison() {    }
+    public QuantityComparison() {
+    }
 
-    public void getValueConverted(QuantityComparison a, QuantityComparison b){
+    public void getValueConverted(QuantityComparison a, QuantityComparison b) {
         if (a.unit.getUnitType().equals(b.unit.getUnitType())) {
             b.value = a.unit.getUnitsSame(b.unit.getConverted(b.value));
             b.unit = a.unit;
@@ -22,6 +23,7 @@ public class QuantityComparison {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         QuantityComparison that = (QuantityComparison) o;
+        getValueConverted(this, that);
         return (Double.compare(that.value, value) == 0 &&
                 (unit == that.unit || (that.value == 0 && value == 0)));
     }

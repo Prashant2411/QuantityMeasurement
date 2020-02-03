@@ -11,11 +11,12 @@ public class QuantityAddition {
         this.unit = unit;
     }
 
-    public QuantityAddition() {}
+    public QuantityAddition() {
+    }
 
     public double getAddition(QuantityAddition values, QuantityAddition units) {
         double sum = 0;
-        for (int i =0; i<values.value.length; i++)
+        for (int i = 0; i < values.value.length; i++)
             sum += units.unit[i].getConverted(values.value[i]);
         return sum;
     }
