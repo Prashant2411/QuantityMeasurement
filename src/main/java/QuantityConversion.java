@@ -1,5 +1,9 @@
 public class QuantityConversion {
 
+    public double getConverted(double values, MeasurementUnit units) {
+        return units.getConverted(values);
+    }
+
     public enum MeasurementUnit {
         FEET(12, 1, "Length"), INCH(1, 1, "Length"), YARD(36, 1, "Length"), CENTIMETER(1, 2.54, "Length"),
         LITRE(1, 1, "Volume"), MILLI_LITRE(1, 1000, "Volume"), GALLON(3.78, 1, "Volume"),
